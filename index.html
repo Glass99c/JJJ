@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #left {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 15%;
+        height: 100%;
+        background-color: white;
+        color:#737373;
+        z-index: 1;
+        box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.068);
+    }
+    body {
+        color:#ffffff; 
+        width:85%; 
+        min-height:100%; 
+        float:right;
+        background-color: #F2F5FF;
+        text-align:center; 
+    }
+    
+    .header-sidebar {
+        margin-top: 30px;
+        text-align: center;
+        display: inline-flex;
+    }
+    #menu-sidebar{
+        list-style:none;
+        padding-left: 0;
+        overflow:auto;
+    }
+
+    li a {
+        font-family: sans-serif;
+        height:30px;
+        text-decoration:none;
+        display:block;
+        padding:8px 15px 8px 15px;
+        color:#000;
+    }
+    li a:hover{
+        background-color:#E1E7FF;
+        color:#312D81
+    }
+    #company-logo{
+        margin-right:10px;
+    }
+    #company-name{
+        color:#312D81;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left:10px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id="left">
+        <div class="header-sidebar">
+            <div id="company-logo">
+                <img src="logo.png">
+            </div>
+
+            <div id="company-name">
+                Factory<br>Manager
+            </div>
+        </div>
+        <ul id="menu-sidebar">
+            <li><a href="#">대시보드</a></li>
+            <li><a href="#">웹캠</a></li>
+            <li><a href="#">통계</a></li>
+            <li><a href="#">작업구역</a></li>
+        </ul>
+    </div>
+    <div id="right">
+        <div>
+            <img style="width:50%"src="https://pbs.twimg.com/media/FygRu71aYAEEJvC?format=jpg&name=large"/>
+        </div>
+        <h1>Blue pill</h1>
+        <h2>Right - Screen split</h2>
+        <h3>Additional filler text</h3>
+        <h4>To demonstrate the effect</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis metus a purus tincidunt accumsan. Sed non orci felis. Vivamus eros risus, luctus vel vulputate id, vestibulum vel augue. In vulputate egestas volutpat. Donec in velit quis leo mollis porta. Suspendisse potenti. Etiam faucibus porttitor libero, in fermentum urna pulvinar quis. Sed pretium tortor nisl. Pellentesque auctor elementum urna laoreet molestie. Donec et mauris ante. Vestibulum malesuada lacinia nulla, vitae tristique erat interdum a. Suspendisse potenti. Cras magna neque, dictum at vehicula lobortis, varius eget libero. Curabitur a lectus ac nulla pharetra porttitor vel at magna. Donec neque risus, pellentesque at porta vitae.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis metus a purus tincidunt accumsan. Sed non orci felis. Vivamus eros risus, luctus vel vulputate id, vestibulum vel augue. In vulputate egestas volutpat. Donec in velit quis leo mollis porta. Suspendisse potenti. Etiam faucibus porttitor libero, in fermentum urna pulvinar quis. Sed pretium tortor nisl. Pellentesque auctor elementum urna laoreet molestie. Donec et mauris ante. Vestibulum malesuada lacinia nulla, vitae tristique erat interdum a. Suspendisse potenti.</p>
+    </div>
+</body>
+</html>
