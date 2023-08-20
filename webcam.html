@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <style>
+
     #left {
         position: fixed;
         top: 0px;
@@ -19,6 +20,7 @@
         z-index: 1;
         box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.068);
     }
+
     body {
         color:black; 
         width:85%; 
@@ -79,11 +81,12 @@
         font-size: 22px;
     }
     .content{
-        display : flex; /*flex를 이용하겠다.*/
+        display:inline-flex; /*flex를 이용하겠다.*/
         flex-direction: row;
         justify-content: center;
     }
     .content-1>div{
+
         height:950px;
         width: 950px;
         background-color: white;
@@ -114,10 +117,10 @@
 
         </div>
         <ul id="menu-sidebar">
-            <li><a href="index.html"><img src="src/dashboard.png" alt="dashboard"><span>대시보드</span></a></li>
-            <li><a href="webcam.html"><img src="src/webcam.png" alt="webcam">웹캠</a></li>
-            <li><a href="statistics.html"><img src="src/statistics.png" alt="statistics">통계</a></li>
-            <li><a href="workArea.html"><img src="src/work-area.png" alt="work-area">작업구역</a></li>
+            <li><a href="index.html"><img id="image_dash" src="/src/dashboard.png" alt="dashboard"><span>대시보드</span></a></li>
+            <li onmouseover="overWebcam()" onmouseout="outWebcam()"><a href="webcam.html"><img id="image_web" src="/src/webcam_gray.png" alt="webcam">웹캠</a></li>
+            <li onmouseover="overStat()" onmouseout="outStat()"><a href="statistics.html"><img id="image_stat" src="/src/statistics_gray.png" alt="statistics">통계</a></li>
+            <li onmouseover="overWork()" onmouseout="outWork()"><a href="workArea.html"><img id="image_work" src="/src/work-area_gray.png" alt="work-area">작업구역</a></li>
         </ul>
     </div>
     <div id="right">
@@ -139,5 +142,31 @@
             </div>
         </div>
     </div>
+    <script>
+        function overWebcam() {
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam.png")
+        }
+        function outWebcam(){
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam_gray.png")
+        }
+        function overStat(e) {
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam_gray.png")
+        }
+        function outStat(e){
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam_gray.png")
+        }
+        function overWork(e) {
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam_gray.png")
+        }
+        function outWork(e){
+            let image = document.getElementById('image_web');
+            image.setAttribute("src", "/src/webcam_gray.png")
+        }
+      </script>
 </body>
 </html>
